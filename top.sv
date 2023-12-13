@@ -51,22 +51,22 @@ output wire [6:0] seven_seg
 );
 always_comb begin
 	case (in)
-		7'b0000000: seven_seg = 7'b0000001; //0
-		7'b0000001: seven_seg = 7'b1001111; //1
-		7'b0000010: seven_seg = 7'b0010010; //2
-		7'b0000011: seven_seg = 7'b0000110; //3
-		7'b0000100: seven_seg = 7'b1001100; //4
-		7'b0000101: seven_seg = 7'b0100100; //5
-		7'b0000110: seven_seg = 7'b0100000; //6
-		7'b0000111: seven_seg = 7'b0001111; //7
+		7'b0000000: seven_seg = 7'b1000000; //0
+		7'b0000001: seven_seg = 7'b1111001; //1
+		7'b0000010: seven_seg = 7'b0100100; //2
+		7'b0000011: seven_seg = 7'b0110000; //3
+		7'b0000100: seven_seg = 7'b0011001; //4
+		7'b0000101: seven_seg = 7'b0010010; //5
+		7'b0000110: seven_seg = 7'b0000010; //6
+		7'b0000111: seven_seg = 7'b1111000; //7
 		7'b0001000: seven_seg = 7'b0000000; //8
-		7'b0001001: seven_seg = 7'b0001100; //9
+		7'b0001001: seven_seg = 7'b0011000; //9
 		7'b0001010: seven_seg = 7'b0001000; //a
-		7'b0001011: seven_seg = 7'b1100000; //b
-		7'b0001100: seven_seg = 7'b1110010; //c
-		7'b0001101: seven_seg = 7'b1000010; //d
-		7'b0001110: seven_seg = 7'b0110000; //e
-		7'b0001111: seven_seg = 7'b0111000; //f
+		7'b0001011: seven_seg = 7'b0000011; //b
+		7'b0001100: seven_seg = 7'b0100111; //c
+		7'b0001101: seven_seg = 7'b0100001; //d
+		7'b0001110: seven_seg = 7'b0000110; //e
+		7'b0001111: seven_seg = 7'b0001110; //f
 		default: seven_seg = 7'b1;
 	endcase
 end
